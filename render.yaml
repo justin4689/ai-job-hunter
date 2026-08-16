@@ -35,6 +35,15 @@ services:
       - key: N8N_RUNNERS_ENABLED
         value: "false"
 
+      - key: N8N_HOST
+        value: n8n-service-kd6y.onrender.com
+
+      - key: N8N_PROTOCOL
+        value: https
+
+      - key: WEBHOOK_URL
+       value: https://n8n-service-kd6y.onrender.com/
+
       # These automatically populate connection details 
       # for the Render Postgres database defined below
       - key: DB_TYPE
